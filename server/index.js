@@ -7,7 +7,8 @@ app.use(express.json())
 
 app.use(cors({
     origin:"https://client-ten-ivory.vercel.app/",
-    methods:['POST','GET','PATCH','DELETE']
+    methods:['POST','GET','PATCH','DELETE'],
+    credentials:true
 }))
  
 app.listen(3400,()=>{
