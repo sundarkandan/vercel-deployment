@@ -4,13 +4,13 @@ function Update(){
         
         const [products,setProducts]=useState([])
      useEffect(()=>{
-            axios.get("http://localhost:3400/update").then(res=>{setProducts(res.data)
+            axios.get("https://server2-nu-eight.vercel.app/update").then(res=>{setProducts(res.data)
                 console.log(products)
             })
        },[])
 
        async function reload(){
-        await axios.get("http://localhost:3400/update").then(res=>{setProducts(res.data)
+        await axios.get("https://server2-nu-eight.vercel.app/update").then(res=>{setProducts(res.data)
             console.log(products)
         })
        }
@@ -18,7 +18,7 @@ function Update(){
         console.log(index)
         var qty=Number(prompt("Enter the New Stock Count"))
         var pro=products[index]
-        await axios.patch('http://localhost:3400/update',{pro,qty}).then(res=>alert("avaliable only "+res.data+" stocks"))
+        await axios.patch('https://server2-nu-eight.vercel.app/update',{pro,qty}).then(res=>alert("avaliable only "+res.data+" stocks"))
         reload()
        }
        return(
