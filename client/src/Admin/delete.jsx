@@ -10,7 +10,7 @@ function Delete(){
    async function handledelete(id){
     console.log(id)
         var did=Number(id)
-        await axios.delete(`http://localhost:3400/delete/${did}`).then(res=>{setProducts(res.data)
+        await axios.delete(`https://server2-nu-eight.vercel.app/delete/${did}`).then(res=>{setProducts(res.data)
             alert('Data Deleted Successfully')
         })
 
