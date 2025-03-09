@@ -6,7 +6,7 @@ const cors=require("cors");
 app.use(express.json())
 
 app.use(cors({
-    origin:"*",
+    origin:"https://client-ten-ivory.vercel.app/",
     methods:['POST','GET','PATCH','DELETE']
 }))
  
