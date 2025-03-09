@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "img": "https://th.bing.com/th/id/OIP.KSwWg5oQumK11Eobq3zpugAAAA?rs=1&pid=ImgDetMain",
+    "imgs": [
+      "https://th.bing.com/th/id/OIP.FTSm0XX5IR-LIVHhR56YQwAAAA?rs=1&pid=ImgDetMain",
+      "https://th.bing.com/th/id/OIP.vz6dz6X1MH3y7Br0hSQRQgHaHa?rs=1&pid=ImgDetMain"
+    ],
+    "name": "Apple iPhone 15",
+    "brand": "Apple",
+    "prize": "79,900",
+    "ram": "6",
+    "storage": "128",
+    "camara_rear": [
+      48,
+      12,
+      12
+    ],
+    "camara_front": 12,
+    "stocks": 30,
+    "processor_chipset": "Apple A16 Bionic",
+    "description": "This is an iPhone."
+  },
+  {
+    "id": 2,
+    "img": "https://th.bing.com/th/id/OIP.kgfjnY9hIGLqCJQ2aIy52wAAAA?rs=1&pid=ImgDetMain",
+    "imgs": [
+      "https://static.vecteezy.com/system/resources/previews/035/307/615/non_2x/samsung-galaxy-s22-ultra-with-pen-high-quality-transparent-free-png.png",
+      "https://image-us.samsung.com/us/smartphones/galaxy-s23-ultra/images/localization/d3eco.png"
+    ],
+    "name": "Samsung Galaxy S25 Ultra",
+    "brand": "Samsung",
+    "prize": "1,29,999",
+    "ram": "12",
+    "storage": "256",
+    "camara_rear": [
+      200,
+      50,
+      10,
+      10
+    ],
+    "camara_front": 40,
+    "stocks": 0,
+    "processor_chipset": "Exynos 2500 / Qualcomm Snapdragon 8 Gen 4",
+    "description": "This is a Samsung phone."
+  },
+  {
+    "id": 1741364158440,
+    "name": "I Phone 16",
+    "brand": "Apple",
+    "prize": "102000",
+    "ram": "8",
+    "storage": [
+      "512"
+    ],
+    "camara_rear": [
+      23,
+      12
+    ],
+    "camara_front": "13",
+    "stocks": 20,
+    "processor_chipset": "Apple A18 Bionic chip",
+    "img": "https://pngimg.com/uploads/iphone16/iphone16_PNG27.png",
+    "imgs": [
+      "https://pngimg.com/d/iphone16_PNG39.png"
+    ],
+    "description": "this is an iphone Product"
+  }
+]

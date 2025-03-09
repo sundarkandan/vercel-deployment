@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.add-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.form-control{
+    border: 1px solid;
+}
+textarea{
+    max-width: 200px;
+    max-height:100px ;
+}
+
+.btn{
+    transition: .30s;
+}
+.btn:active{
+    transform: scale(1.2);
+    transition: .30s;
+}
