@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Delete(){
     const [products,setProducts]=useState([])
  useEffect(()=>{
-        axios.get("http://localhost:3400/delete").then(res=>{setProducts(res.data)
+        axios.get("https://server2-nu-eight.vercel.app/delete").then(res=>{setProducts(res.data)
             console.log(res.data)
         })
    },[])
