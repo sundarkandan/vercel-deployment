@@ -9,7 +9,7 @@ function Product(){
   const [Data,setData]=useState([])
 
   useEffect(()=>{
-      axios.get("server-gamma-weld-78.vercel.app/product").then((res)=>{setData(res.data)
+      axios.get("https://server2-nu-eight.vercel.app/product").then((res)=>{setData(res.data)
      
     }).then( console.log("c"+Data))
   },[])
