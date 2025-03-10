@@ -71,7 +71,7 @@ app.patch('/update',(req,res)=>{
 app.delete('/delete/:id', (req, res) => {
     const fdata = data.filter(item => item.id !== Number(req.params.id));
     data.push(...fdata)
-    fs.writeFile('./products.json', JSON.stringify(fdata, null, 2), () => {
+    fs.writeFile('./products.json', JSON.stringify(data, null, 2), () => {
         res.json(fdata);
     });
 });
