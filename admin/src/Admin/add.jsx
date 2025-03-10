@@ -16,7 +16,7 @@ function Add(){
     }
     
     async function send(){
-        await axios.post("https://server-lr1g.onrender.com/Add",products).then(res=>(alert(res.data)))
+        await axios.post("https://server-gwet.onrender.com/Add",products).then(res=>(alert(res.data)))
     }
 
     function handle(index,value){
