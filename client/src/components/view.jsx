@@ -9,7 +9,7 @@ function View(){
     var camara_rear=product.camara_rear
     var [qty,setQty]=useState(0)
     async function handleclick(){
-        await axios.patch('http://localhost:3400/view',{product,qty}).then(res=>alert("avaliable only "+res.data+" stocks")).then(window.print())
+        await axios.patch('https://server-lr1g.onrender.com/view',{product,qty}).then(res=>alert("avaliable only "+res.data+" stocks")).then(window.print())
     }
     return(
        <>

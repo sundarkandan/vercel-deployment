@@ -9,7 +9,7 @@ function Product(){
   const [Data,setData]=useState([])
 
   useEffect(()=>{
-      axios.get("http://localhost:3400/product").then((res)=>{setData(res.data)
+      axios.get("https://server-lr1g.onrender.com/product").then((res)=>{setData(res.data)
      
     }).then( console.log("c"+Data))
   },[])
