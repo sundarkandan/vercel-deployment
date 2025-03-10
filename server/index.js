@@ -5,13 +5,9 @@ const fs=require('fs')
 const cors=require("cors");
 app.use(express.json())
 
-const allowedOrigins = [
-    'https://admin-340h.onrender.com',  // Admin page
-    'https://client-fep0.onrender.com'   // Client page (Replace with actual URL)
-];
 
 app.use(cors({
-    origin: allowedOrigins,
+    origin: "*",
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
 }));
