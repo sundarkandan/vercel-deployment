@@ -7,7 +7,7 @@ function Home(){
     return(
         <>
         <div className="container-fluid">
-            <div className="row d-flex flex-sm-column flex-md-row order-sm-2">
+            <div className="row d-flex flex-sm-column flex-md-row">
                 <div className="col col-home">
                     <h1 className="display-5" id="home-t1">The <span className="text-danger"><b>World</b></span> is Your Hands.!</h1><br />
                     <p id="para">Connect, Create, Communicate with Our Phones.</p>
@@ -18,7 +18,7 @@ function Home(){
                        
                 </div>
                 <div className="col col-home">
-                    <img src={Main} className="home-imgs d-xs-none d-sm-block" width="400px" alt="" />
+                    <img src={Main} className="home-imgs d-sm-none" width="400px" alt="" />
                 </div>
             </div>
         </div>
