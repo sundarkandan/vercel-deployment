@@ -26,11 +26,10 @@ app.get('/product',(req,res)=>{
    return res.json(data)
  
 })
-app.get('/delete',(req,res)=>{
-    res.json(data)
-    var a= res.json(data)
-    console.log(a)
-})
+app.get('/delete', (req, res) => {
+    console.log(data);
+    res.json(data);
+});
 app.get('/update',(req,res)=>{
     res.json(data)
     var a= res.json(data)
@@ -70,11 +69,9 @@ app.patch('/update',(req,res)=>{
     console.log("index: "+index)
     
 })
-app.delete('/delete/:id',(req,res)=>{
-    console.log(req.params.id)
-    const fdata=data.filter(item=>item.id!==req.params.id)
-    console.log(fdata)
-    fs.writeFile('./products.json',JSON.stringify(fdata,null,2),()=>{
-        res.json(fdata)
-    })
-})
+app.delete('/delete/:id', (req, res) => {
+    const fdata = data.filter(item => item.id !== Number(req.params.id));
+    fs.writeFile('./products.json', JSON.stringify(fdata, null, 2), () => {
+        res.json({ message: "Product deleted", data: fdata });
+    });
+});
