@@ -70,20 +70,10 @@ app.patch('/update',(req,res)=>{
 })
 app.delete('/delete/:id', (req, res) => {
     const idToDelete = Number(req.params.id);
-    
-    // Remove the item from the in-memory array
     const updatedData = data.filter(item => item.id !== idToDelete);
-
-    // Update the in-memory data array
-    data.length = 0; // Clear existing array
-    data.push(...updatedData); // Refill with updated data
-
-    // Write updated data to the file
+    data.length = 0;
+    data.push(...updatedData);
     fs.writeFile('./products.json', JSON.stringify(data, null, 2), (err) => {
-        if (err) {
-            console.error("Error writing to file:", err);
-            return res.status(500).json({ error: "Failed to delete item" });
-        }
         res.json(data);
     });
 });
