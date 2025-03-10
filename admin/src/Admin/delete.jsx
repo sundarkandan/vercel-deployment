@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 function Delete(){
     const [products,setProducts]=useState([])
  useEffect(()=>{
-        axios.get("https://server-gwet.onrender.com/update").then(res=>{setProducts(res.data)
-            console.log(res.data)
+        axios.get("https://server-gwet.onrender.com/update").then(res=>{setProducts(res)
+            console.log(res)
         })
    },[])
    async function handledelete(id){
     console.log(id)
         var did=Number(id)
-        await axios.delete(`https://server-gwet.onrender.com/delete/${did}`).then(res=>{setProducts(res.data)
+        await axios.delete(`https://server-gwet.onrender.com/delete/${did}`).then(res=>{setProducts(res)
             alert('Data Deleted Successfully')
         })
 
