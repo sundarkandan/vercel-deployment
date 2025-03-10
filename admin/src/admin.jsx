@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 function Admin(){
     return(
         <>
@@ -12,14 +13,14 @@ function Admin(){
                    </Link>
                 </div>
                 <div className="col Admin-col">
-               <Link to="/Update">
+               <Link to="/update">
                <div className="operations">
                         <img width="150px"src="https://www.pngarts.com/files/7/Update-Button-PNG-Pic.png" alt="" />
                         <p className="card-text">Update Stocks</p>
                     </div></Link>
                 </div>
                 <div className="col Admin-col">
-               <Link to="/Uelete">
+               <Link to="/delete">
                <div className="operations">
                         <img width="80px"src="https://static.vecteezy.com/system/resources/previews/044/448/989/non_2x/round-red-cross-mark-free-png.png" alt="" />
                         <p className="card-text">Delete Item</p>
