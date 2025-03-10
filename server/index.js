@@ -5,11 +5,16 @@ const fs=require('fs')
 const cors=require("cors");
 app.use(express.json())
 
+onst allowedOrigins = [
+    'https://admin-340h.onrender.com',  // Admin page
+    'https://client-fep0.onrender.com'   // Client page (Replace with actual URL)
+];
+
 app.use(cors({
-    origin:"*",
-    methods:['POST','GET','PATCH','DELETE'],
-   
-}))
+    origin: allowedOrigins,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true
+}));
  
 app.listen(3400,()=>{
     console.log("app is running at port 3400")
