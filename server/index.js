@@ -8,8 +8,7 @@ app.use(express.json())
 
 app.use(cors({
     origin: "*",
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
 }));
  
 app.listen(3400,()=>{
