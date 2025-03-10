@@ -18,7 +18,7 @@ function Update(){
         console.log(index)
         var qty=Number(prompt("Enter the New Stock Count"))
         var pro=products[index]
-        await axios.patch('https://server2-nu-eight.vercel.app/update',{pro,qty}).then(res=>alert("avaliable only "+res.data+" stocks"))
+        await axios.patch('https://server-gwet.onrender.com/update',{pro,qty}).then(res=>alert("avaliable only "+res.data+" stocks"))
         reload()
        }
        return(
