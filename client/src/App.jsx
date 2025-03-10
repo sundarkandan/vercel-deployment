@@ -3,10 +3,6 @@ import Home from './components/home'
 import Product from './components/product'
 import Contact from './components/contact'
 import View from "./components/view"
-import Admin from "./admin"
-import Create from "./Admin/add"
-import Update from "./Admin/update"
-import Delete from "./Admin/delete"
 
 import {Link, Routes, Route } from "react-router-dom"
 
@@ -31,14 +27,7 @@ function App() {
               <Route path='/' element={<Home/>}/>
               <Route path='/product' element={<Product/>}/>
               <Route path='/view' element={<View/>}/>
-              <Route path='/contact' element={<Contact/>}/>
-              <Route path='/admin' element={<Admin/>}/>
-              <Route path='/Add' element={<Create/>}/>
-              <Route path='/Update' element={<Update/>}/>
-              <Route path='/Delete' element={<Delete/>}/>
-
-
-              
+              <Route path='/contact' element={<Contact/>}/>  
             </Routes>
             
       </div>
