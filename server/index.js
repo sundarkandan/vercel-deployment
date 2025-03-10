@@ -6,7 +6,7 @@ const cors=require("cors");
 app.use(express.json())
 
 app.use(cors({
-    origin:"https://client-fep0.onrender.com",
+    origin:"*",
     methods:['POST','GET','PATCH','DELETE'],
     credentials:true
 }))
