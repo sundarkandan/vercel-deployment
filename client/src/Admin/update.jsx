@@ -4,13 +4,13 @@ function Update(){
         
         const [products,setProducts]=useState([])
      useEffect(()=>{
-            axios.get("https://server2-nu-eight.vercel.app/update").then(res=>{setProducts(res.data)
+            axios.get("https://server-lr1g.onrender.com/update").then(res=>{setProducts(res.data)
                 console.log(products)
             })
        },[])
 
        async function reload(){
-        await axios.get("https://server2-nu-eight.vercel.app/update").then(res=>{setProducts(res.data)
+        await axios.get("https://server-lr1g.onrender.com/update").then(res=>{setProducts(res.data)
             console.log(products)
         })
        }
