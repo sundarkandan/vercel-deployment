@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 function Delete(){
     const [products,setProducts]=useState([])
  useEffect(()=>{
-        axios.get("https://server2-nu-eight.vercel.app/delete").then(res=>{setProducts(res.data)
+        axios.get("https://server-lr1g.onrender.com//delete").then(res=>{setProducts(res.data)
             console.log(res.data)
         })
    },[])
    async function handledelete(id){
     console.log(id)
         var did=Number(id)
-        await axios.delete(`https://server2-nu-eight.vercel.app/delete/${did}`).then(res=>{setProducts(res.data)
+        await axios.delete(`https://server-lr1g.onrender.com//delete/${did}`).then(res=>{setProducts(res.data)
             alert('Data Deleted Successfully')
         })
 
