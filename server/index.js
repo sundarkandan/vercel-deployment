@@ -42,7 +42,7 @@ app.patch('/view',(req,res)=>{
     var process=product.stocks-qty
     var index=data.findIndex((pro)=>pro.id==id)
     if(process<qty){
-        res.json(product.stocks+" Qty so please enter less than "+product.stocks)
+        res.json(product.stocks+" Qty so please enter less than "+product.stocks+" ")
     }
    else{
         data.splice(index,1,{...product,stocks:process})
