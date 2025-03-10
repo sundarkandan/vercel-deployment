@@ -10,7 +10,7 @@ function Delete(){
    async function handledelete(id){
     console.log(id)
         var did=Number(id)
-        await axios.delete(`https://server-gwet.onrender.com/delete/${did}`).then(res=>{setProducts(res)
+        await axios.delete(`https://server-gwet.onrender.com/delete/${did}`).then(res=>{setProducts(res.data)
             alert('Data Deleted Successfully')
         })
 
