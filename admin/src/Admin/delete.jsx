@@ -4,7 +4,7 @@ function Delete(){
     const [products,setProducts]=useState([])
  useEffect(()=>{
         axios.get("https://server-gwet.onrender.com/delete").then(res=>{setProducts(res.data)
-            console.log(res)
+            console.log(res.data)
         })
    },[])
    async function handledelete(id){
