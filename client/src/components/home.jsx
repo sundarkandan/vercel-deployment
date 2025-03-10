@@ -17,8 +17,8 @@ function Home(){
                         </Routes>
                        
                 </div>
-                <div className="col col-home  d-xs-none">
-                    <img src={Main} className="home-imgs d-sm-none" width="400px" alt="" />
+                <div className="col col-home">
+                    <img src={Main} className="home-imgs d-sm-none d-xs-none d-md-block" width="400px" alt="" />
                 </div>
             </div>
         </div>
