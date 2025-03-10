@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Delete(){
     const [products,setProducts]=useState([])
  useEffect(()=>{
-        axios.get("https://server-gwet.onrender.com/delete").then(res=>{setProducts(res)
+        axios.get("https://server-gwet.onrender.com/delete").then(res=>{setProducts(res.data)
             console.log(res)
         })
    },[])
