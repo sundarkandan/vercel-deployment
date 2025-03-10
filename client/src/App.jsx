@@ -22,9 +22,9 @@ function App() {
           aria-label="Toggle navigation"><img src="https://icon-library.com/images/menu-png-icon/menu-png-icon-21.jpg" width="50px" alt="" /></button>
           <div id='navs' className='collapse navbar-collapse justify-content-end'>
           <ul className="navbar-nav me-3 ms-2">
-              <li className='nav-item '><Link to='/' className='nav-link text-dark' data-bs-toggle="collapse" data-bs-target="#navs">Home</Link></li>
-              <li className='nav-item'><Link to='/product' className='nav-link text-dark' data-bs-toggle="collapse" data-bs-target="#navs">Products</Link></li>
-              <li className='nav-item'><Link to='/contact' className='nav-link text-dark' data-bs-toggle="collapse" data-bs-target="#navs">Contact</Link></li>
+              <li className='nav-item '><Link to='/' className='nav-link text-dark'>Home</Link></li>
+              <li className='nav-item'><Link to='/product' className='nav-link text-dark'>Products</Link></li>
+              <li className='nav-item'><Link to='/contact' className='nav-link text-dark'>Contact</Link></li>
           </ul>
           </div>
             
