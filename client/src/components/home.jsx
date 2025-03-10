@@ -18,7 +18,7 @@ function Home(){
                        
                 </div>
                 <div className="col col-home">
-                    <img src={Main} className="home-imgs d-none d-sm-block" width="400px" alt="" />
+                    <img src={Main} className="home-imgs d-block d-sm-none" width="400px" alt="" />
                 </div>
             </div>
         </div>
