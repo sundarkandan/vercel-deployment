@@ -10,7 +10,7 @@ function Update(){
        },[])
 
        async function reload(){
-        await axios.get("https://server-lr1g.onrender.com/update").then(res=>{setProducts(res.data)
+        await axios.get("https://server-gwet.onrender.com/update").then(res=>{setProducts(res.data)
             console.log(products)
         })
        }
