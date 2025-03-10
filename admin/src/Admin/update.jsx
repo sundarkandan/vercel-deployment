@@ -4,7 +4,7 @@ function Update(){
         
         const [products,setProducts]=useState([])
      useEffect(()=>{
-            axios.get("https://server-lr1g.onrender.com/update").then(res=>{setProducts(res.data)
+            axios.get("https://server-gwet.onrender.com/update").then(res=>{setProducts(res.data)
                 console.log(products)
             })
        },[])
