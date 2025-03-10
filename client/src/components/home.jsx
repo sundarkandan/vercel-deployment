@@ -7,7 +7,7 @@ function Home(){
     return(
         <>
         <div className="container-fluid">
-            <div className="row d-flex flex-sm-column flex-md-row">
+            <div className="row d-flex flex-sm-column flex-md-row order-sm-2">
                 <div className="col col-home">
                     <h1 className="display-5" id="home-t1">The <span className="text-danger"><b>World</b></span> is Your Hands.!</h1><br />
                     <p id="para">Connect, Create, Communicate with Our Phones.</p>
