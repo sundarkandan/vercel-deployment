@@ -41,11 +41,15 @@ app.patch('/view',(req,res)=>{
     var id=product.id
     var process=product.stocks-qty
     var index=data.findIndex((pro)=>pro.id==id)
-    
-    data.splice(index,1,{...product,stocks:process})
+    if(process<0){
+        res.json("only avaliable"+product.stocks+"qty so please enter less than"+product.stocks)
+    }
+   else{
+        data.splice(index,1,{...product,stocks:process})
     fs.writeFile('./products.json',JSON.stringify(data,null,2),()=>{
         res.json(Number(process))
     })
+   }
     console.log("Stocks: "+product.stocks)
     console.log("process: "+process)
     console.log("index: "+index)
