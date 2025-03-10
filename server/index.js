@@ -72,7 +72,7 @@ app.patch('/update',(req,res)=>{
 })
 app.delete('/delete/:id',(req,res)=>{
     console.log(req.params.id)
-    const fdata=data.filter(item=>item.id!==Number(req.params.id))
+    const fdata=data.filter(item=>item.id!==req.params.id)
     console.log(fdata)
     fs.writeFile('./products.json',JSON.stringify(fdata,null,2),()=>{
         res.json(fdata)
